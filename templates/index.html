@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Model
+        </title>
+    </head>
+        <body style="background-color:rgb(210, 226, 226);">
+            <p style="text-align:center">
+            Welcome To Shubham's Recomendation Engine</p>
+            <form align="center" method="POST">
+                <label for="firstname">First Name:</label> 
+<input type="text" id="firstname" name="fname" placeholder="Enter Movie Name"> 
+
+                <input type="submit" value="submit"/>
+            </form>
+        
+           <p style="text-align: center;"><strong>Recomendation For {{first_name}}</strong> </p>
+            {% for i in range(size) %}
+            <p style="text-align: center;"> <em>{{i+1}}:{{predict.pop()}} </em></p>
+        {% endfor %}
+        
+        
+                
+            
+        </body>
+    
+</html>
